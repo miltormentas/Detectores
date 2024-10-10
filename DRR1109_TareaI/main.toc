@@ -1,0 +1,24 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\'Indice general}{\es@scroman {i}}{chapter*.1}%
+\contentsline {chapter}{\'Indice de figuras}{\es@scroman {ii}}{chapter*.2}%
+\contentsline {chapter}{Introducción}{\es@scroman {iii}}{chapter*.3}%
+\contentsline {chapter}{Marco Teórico}{1}{chapter*.4}%
+\contentsline {section}{Desarrollo del problema}{1}{section*.5}%
+\contentsline {subsection}{xxx}{1}{section*.5}%
+\contentsline {subsection}{Detectores de radiación semiconductores}{1}{section*.5}%
+\contentsline {section}{Desarrollo del problema}{1}{section*.5}%
+\contentsline {subsection}{xxx}{1}{section*.5}%
+\contentsline {chapter}{Metodología Experimental}{2}{chapter*.6}%
+\contentsline {section}{Desarrollo del problema}{2}{section*.7}%
+\contentsline {subsection}{Desarrollo experimental}{3}{section*.7}%
+\contentsline {subsubsection}{Prueba Previa}{3}{section*.7}%
+\contentsline {chapter}{Resultados y discusión}{10}{chapter*.20}%
+\contentsline {section}{Desarrollo del problema}{10}{section*.21}%
+\contentsline {subsection}{xxx}{10}{section*.21}%
+\contentsline {subsection}{Detectores de radiación semiconductores}{10}{section*.21}%
+\contentsline {section}{Desarrollo de la solución (desarrollo experimental}{10}{section*.21}%
+\contentsline {subsection}{xxx}{11}{section*.21}%
+\contentsline {chapter}{Conclusiones y recomendaciones}{12}{chapter*.22}%
+\contentsline {paragraph}{Conclusiones:}{12}{chapter*.22}%
+\contentsline {paragraph}{Recomendaciones:}{12}{chapter*.22}%
+\contentsline {chapter}{Referencias bibliográficas}{13}{chapter*.23}%

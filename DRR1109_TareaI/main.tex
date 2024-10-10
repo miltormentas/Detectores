@@ -1,0 +1,124 @@
+\documentclass[letterpaper,12pt,titlepage, twosides, openright,abstract=on,]{report}
+%letterpapper:
+%12pt: tamaño de letra.
+%titlepage: para crear portada.
+% openright:
+%abstract:
+
+\usepackage[spanish, es-tabla]{babel}
+%Este paquete pone el documento en el idioma que se le indique, en este caso es español.
+
+\usepackage[utf8x]{inputenc} 
+%Este paquete permite colocar simbolos de distintos idiomas como las tildes.
+
+%\usepackage[document]{ragged2e}
+%Este paquete permite el uso de guiones para separar palabras cuando la línea se queda demasiado corta, generado una orilla más uniforme.
+%Quita la sangria!!!
+\usepackage{wrapfig}
+\usepackage{soul}
+%Este paquete permite hacer subrayados.
+
+\usepackage{hyperref}
+%Este paquete permite crear links entre distintas partes del documento o incluso links a páginas web externas.
+
+\usepackage{amsmath, amssymb, amsfonts}
+%Estos paquetes amplían el catálogo de símbolos y entornos disponibles para escribir fórmulas matemáticas
+
+\usepackage{graphicx}
+%Este paquete permite insertar y manipular imágenes en un documento.
+
+\usepackage{subcaption}
+%Este paquete permite colocar varias imagenes.
+
+\usepackage{blindtext}
+%Este permite crear texto aleatorio.
+
+\usepackage{siunitx}
+%Este paquete permite gestionar y expresar correctamente cualquier medida utilizando el Sistema Internacional de Unidades.
+
+\usepackage{caption}
+%Este paquete permite configurar las leyendas de figuras y tablas.
+
+\usepackage{booktabs}
+%Este paquete permite añadir espacio adicional entre líneas específicas de una tabla.
+
+\usepackage{tikz}
+%Este paquete permite  generar gráficos 2D y hasta en 3D.
+
+\usepackage{listings}
+%Este paquete permite la adición de código fuente de múltiples lenguajes de programación en un documento.
+
+\usepackage{physics}
+%Este paquete permite definir macros simples y flexibles para escribir ecuaciones en los lenguajes de álgebra lineal y cálculo vectorial.
+
+\usepackage{titlesec}
+%Este paquete permite cambiar el aspecto de las unidades de estructura de un documento, como capítulos, secciones y subsecciones.
+
+\usepackage{multirow}
+%Este paquete permite construir tablas en las que algunas celdas ocupan varias filas dentro de un entorno tabular.
+
+\usepackage[section]{placeins}
+%Este paquete permite controlar la colocación de flotadores.
+%section: para evitar que las figuras no procesadas correspondientes a una parte del documento se acomoden en la parte siguiente.
+
+\usepackage{float}
+%Este paquete permite rotar objetos, como tablas y figuras flotantes.
+\usepackage{ragged2e}
+\usepackage{xcolor}
+\spanishdecimal{.}
+%Este paquete cambiar el color del texto, resaltarlo de un color determinado o crear bordes a su alrededor.
+
+\usepackage{braket}
+%Este paquete permite usar la notación de bras y kets.
+
+%\usepackage[margin=1.5cm]{geometry}
+
+\usepackage[left=1.5cm,top=1.5cm,right=1.5cm,bottom=2cm,bindingoffset=0.5cm]{geometry}
+
+%\setlength{\parindent}{1.27cm} %en APA se debe tener una sangria de 1.27cm
+\setlength{\parskip}{2mm} %espacio entre parrafos.
+
+\usepackage[backend=biber,style=numeric,sorting=none,autocite=inline,citestyle=apa]{biblatex}
+%Este paquete permite gestionar la bibliografía de un documento.
+%backend=blibtex: orden las citas
+%style=numeric: Define el estilo de bibliografía y el estilo de cita
+%sorting=none: Determina los criterios para ordenar las fuentes bibliográficas.
+%autocite=inline:
+%citestyle=phys: estilo de citación. phy: es de la APS (American Physcal Society)
+
+\addbibresource{references.bib} %Importar el archivo .bib
+
+%NOTA: Es indispensable colocar al final de cada capítulo el comando \newpage. Sino, no aparecera al incluirla en el comando \input{}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\pagenumbering{roman}
+
+\let\clearpage\relax
+
+\input{Chapters/1_Portada/PortadaTEST}
+
+\setcounter{tocdepth}{1} %Hasta donde se desea q se vea en el indice: 0 = chapters; 1 = Sections; 2 = SubSection; 3 = Subsubsection
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{\'Indice general}
+\newpage
+
+\listoffigures
+\addcontentsline{toc}{chapter}{\'Indice de figuras}
+\newpage
+
+%\listoftables
+%\addcontentsline{toc}{chapter}{\'Indice de tablas}
+%\newpage                                       
+
+\input{Chapters/2_Introducción/Introducción}         
+\pagenumbering{arabic}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Chapters/3_Marco_Teórico/MarcoTeórico}        
+\input{Chapters/4_Metodología/Metodología}           
+\input{Chapters/5_Resultados/Resultados}             
+\input{Chapters/6_Conclusiones/Conclusiones}         
+\input{Chapters/7_Referencias_Bibliograficas/Referencias_Bibliograficas}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
